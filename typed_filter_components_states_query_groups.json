@@ -1,0 +1,1758 @@
+{
+  "type": "frame",
+  "id": "PtgwA",
+  "x": 7760,
+  "y": 988,
+  "name": "03 · TYPED FILTER COMPONENTS / States and query groups",
+  "width": 3198,
+  "fill": "$surface",
+  "layout": "vertical",
+  "gap": 32,
+  "padding": 40,
+  "children": [
+    {
+      "type": "text",
+      "id": "Fceqi",
+      "name": "Typed filter library title",
+      "fill": "$ink",
+      "textGrowth": "fixed-width",
+      "width": "fill_container",
+      "content": "Typed filters / One system across modules",
+      "lineHeight": 1.45,
+      "fontFamily": "$font",
+      "fontSize": 28,
+      "fontWeight": "normal"
+    },
+    {
+      "type": "text",
+      "id": "t6jXr5",
+      "name": "Typed library description",
+      "fill": "$muted",
+      "textGrowth": "fixed-width",
+      "width": "fill_container",
+      "content": "44 px default controls · 36 px compact controls · 14 px values in both modes · 13 px labels · 12 px helper text. Selection mode, state and field type are explicit. Scope and Status always constrain condition groups with AND.",
+      "lineHeight": 1.45,
+      "fontFamily": "$font",
+      "fontSize": 15,
+      "fontWeight": "normal"
+    },
+    {
+      "type": "frame",
+      "id": "zm85J",
+      "name": "Typed field component library",
+      "width": "fill_container",
+      "gap": 32,
+      "children": [
+        {
+          "type": "frame",
+          "id": "WsEya",
+          "name": "Choices and relationship fields",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "children": [
+            {
+              "type": "text",
+              "id": "Z6riKx",
+              "name": "Choice components label",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "01 / Choice controls",
+              "lineHeight": 1.45,
+              "fontFamily": "$font",
+              "fontSize": 20,
+              "fontWeight": "normal"
+            },
+            {
+              "id": "etR3M",
+              "type": "ref",
+              "ref": "l8h8Rg",
+              "name": "Single-select specimen",
+              "width": "fill_container",
+              "descendants": {
+                "Q5dpEW": {
+                  "content": "Owner company"
+                },
+                "StCYL": {
+                  "content": "Adani Ports",
+                  "fill": "$ink"
+                }
+              }
+            },
+            {
+              "id": "QFNr2",
+              "type": "ref",
+              "ref": "woYVo",
+              "name": "Multi-select specimen",
+              "width": "fill_container"
+            },
+            {
+              "type": "frame",
+              "id": "e5CQ17",
+              "name": "Field / Relationship lookup",
+              "context": "Permission-scoped relationship lookup. Schema supplies single/multiple selection and stable entity IDs. Changing parent retains valid selections; unavailable selections require correction. Search changes options only. Debounced responses never clear selected values.",
+              "reusable": true,
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "w2Qel",
+                  "name": "Lookup label",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Site",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "fQGkZ",
+                  "name": "Lookup control",
+                  "width": "fill_container",
+                  "cornerRadius": 8,
+                  "stroke": "$line-strong",
+                  "strokeWidth": 1,
+                  "gap": 10,
+                  "padding": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "oJF9F",
+                      "name": "Lookup search icon",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "search",
+                      "library": "lucide",
+                      "fill": "$muted"
+                    },
+                    {
+                      "type": "text",
+                      "id": "T6eQVt",
+                      "name": "Lookup selected value",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Mundra Port",
+                      "lineHeight": 1.45,
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "COSCt",
+                      "name": "Lookup expansion icon",
+                      "width": 16,
+                      "height": 16,
+                      "icon": "chevron-down",
+                      "library": "lucide",
+                      "fill": "$muted"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "enAg3",
+                  "name": "Lookup scope",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Sites in Adani Ports",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Q3mQq",
+              "name": "Field / Boolean filter",
+              "context": "Any is unrestricted; Yes and No are distinct predicates. Unknown/missing data is a separate optional operator, never conflated with No.",
+              "reusable": true,
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Edqf5",
+                  "name": "Boolean field label",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Has assigned owner",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "ERfpW",
+                  "name": "Boolean choices",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "HEkb7",
+                      "name": "Boolean Any",
+                      "width": "fill_container",
+                      "height": 40,
+                      "fill": "$filter-surface",
+                      "cornerRadius": 8,
+                      "stroke": "$line-strong",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "f5Kor",
+                          "name": "Boolean Any label",
+                          "fill": "$ink",
+                          "content": "Any",
+                          "fontFamily": "$font",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dpuCr",
+                      "name": "Boolean Yes",
+                      "width": "fill_container",
+                      "height": 40,
+                      "fill": "$surface",
+                      "cornerRadius": 8,
+                      "stroke": "$line",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "mu1EQ",
+                          "name": "Boolean Yes label",
+                          "fill": "$ink",
+                          "content": "Yes",
+                          "fontFamily": "$font",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "BlSq8",
+                      "name": "Boolean No",
+                      "width": "fill_container",
+                      "height": 40,
+                      "fill": "$surface",
+                      "cornerRadius": 8,
+                      "stroke": "$line",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "nQKkd",
+                          "name": "Boolean No label",
+                          "fill": "$ink",
+                          "content": "No",
+                          "fontFamily": "$font",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "hJ8lC",
+          "name": "Dates ranges and text fields",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "children": [
+            {
+              "type": "text",
+              "id": "d6j7v",
+              "name": "Range components label",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "02 / Typed inputs",
+              "lineHeight": 1.45,
+              "fontFamily": "$font",
+              "fontSize": 20,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "c0MP0",
+              "name": "Field / Number range",
+              "context": "Canonical number range: one normalized criterion with inclusive min/max. Either bound may be open; 0 is valid. Blank means unrestricted, never zero. Area accepts non-negative decimal hectares and normalizes to m² without silently rounding the query. Reject min > max and out-of-range values inline; module schema supplies units and precision.",
+              "reusable": true,
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "wuhfu",
+                  "name": "Boundary area label",
+                  "fill": "$ink",
+                  "content": "Boundary area",
+                  "fontFamily": "$font",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "Xsf1l",
+                  "name": "Minimum and maximum area",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "RTxfk",
+                      "name": "Minimum area",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dRyPL",
+                          "name": "Minimum area label",
+                          "fill": "$muted",
+                          "content": "Minimum",
+                          "fontFamily": "$font",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "SMjrP",
+                          "name": "Minimum area input",
+                          "width": "fill_container",
+                          "height": 44,
+                          "cornerRadius": 8,
+                          "stroke": "$line-strong",
+                          "strokeWidth": 1,
+                          "gap": 12,
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "SJ1ng",
+                              "name": "Minimum area value",
+                              "fill": "$ink",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "1",
+                              "lineHeight": 1.5,
+                              "fontFamily": "$font",
+                              "fontSize": "$type-control",
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "JMpla",
+                              "name": "Minimum area unit",
+                              "fill": "$muted",
+                              "content": "ha",
+                              "fontFamily": "$font",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "RnkeD",
+                      "name": "Maximum area",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "XEqHj",
+                          "name": "Maximum area label",
+                          "fill": "$muted",
+                          "content": "Maximum",
+                          "fontFamily": "$font",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "w0dPcF",
+                          "name": "Maximum area input",
+                          "width": "fill_container",
+                          "height": 44,
+                          "cornerRadius": 8,
+                          "stroke": "$line-strong",
+                          "strokeWidth": 1,
+                          "gap": 12,
+                          "padding": [
+                            0,
+                            12
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "lRqwt",
+                              "name": "Maximum area value",
+                              "fill": "$muted",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "No limit",
+                              "lineHeight": 1.5,
+                              "fontFamily": "$font",
+                              "fontSize": "$type-control",
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "JQiYN",
+                              "name": "Maximum area unit",
+                              "fill": "$muted",
+                              "content": "ha",
+                              "fontFamily": "$font",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "yPRhE",
+                  "x": 0,
+                  "y": 101,
+                  "name": "Area range guidance",
+                  "enabled": false,
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": 592,
+                  "content": "Leave either limit empty for an open range.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Vyb3F",
+              "name": "Field / Date range",
+              "context": "Date-only From/To are inclusive in workspace timezone Asia/Kolkata. Last 30 days is rolling through now; saved views retain the relative preset. Custom dates remain fixed. End before start is invalid; empty endpoints are open bounds.",
+              "reusable": true,
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "id": "TqZ6A",
+                  "type": "ref",
+                  "ref": "l8h8Rg",
+                  "name": "Date preset",
+                  "width": "fill_container",
+                  "descendants": {
+                    "Q5dpEW": {
+                      "content": "Updated"
+                    },
+                    "StCYL": {
+                      "content": "Custom range",
+                      "fill": "$ink"
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "GVAM8",
+                  "name": "Date endpoints",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "VNfMF",
+                      "name": "From date",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "p6MH5o",
+                          "name": "From label",
+                          "fill": "$ink",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "From",
+                          "lineHeight": 1.45,
+                          "fontFamily": "$font",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "dzDq6",
+                          "name": "From input",
+                          "width": "fill_container",
+                          "cornerRadius": 8,
+                          "stroke": "$line-strong",
+                          "strokeWidth": 1,
+                          "gap": 8,
+                          "padding": 12,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "DS9Uj",
+                              "name": "From value",
+                              "fill": "$ink",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "01 Oct 2026",
+                              "lineHeight": 1.45,
+                              "fontFamily": "$font",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "icon",
+                              "id": "NiMHX",
+                              "name": "From calendar",
+                              "width": 16,
+                              "height": 16,
+                              "icon": "calendar",
+                              "library": "lucide",
+                              "fill": "$muted"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "j8LJW",
+                      "name": "To date",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "T5CLEh",
+                          "name": "To label",
+                          "fill": "$ink",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "To",
+                          "lineHeight": 1.45,
+                          "fontFamily": "$font",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "LAWCo",
+                          "name": "To input",
+                          "width": "fill_container",
+                          "cornerRadius": 8,
+                          "stroke": "$line-strong",
+                          "strokeWidth": 1,
+                          "gap": 8,
+                          "padding": 12,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "cNIUE",
+                              "name": "To value",
+                              "fill": "$ink",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "17 Oct 2026",
+                              "lineHeight": 1.45,
+                              "fontFamily": "$font",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "icon",
+                              "id": "XoODM",
+                              "name": "To calendar",
+                              "width": 16,
+                              "height": 16,
+                              "icon": "calendar",
+                              "library": "lucide",
+                              "fill": "$muted"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "N4fFSZ",
+                  "name": "Date timezone",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Dates use Asia/Kolkata · End date included",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "GWZNq",
+              "name": "Field / Text filter",
+              "context": "Text filter applies to its named field, separate from global page search. Operators: contains, equals, starts with, is empty. Empty input is unrestricted. Whitespace-only input adds no criterion. Case handling is defined by field schema.",
+              "reusable": true,
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "u1TtbJ",
+                  "name": "Text field label",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Geofence name",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "iKDmW",
+                  "name": "Text field input",
+                  "width": "fill_container",
+                  "cornerRadius": 8,
+                  "stroke": "$line-strong",
+                  "strokeWidth": 1,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "kxR9j",
+                      "name": "Text field value",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Holding",
+                      "lineHeight": 1.45,
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "xiohi",
+                  "name": "Text match rule",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Contains",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "QjU4q",
+          "name": "Logic and query summaries",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "children": [
+            {
+              "type": "text",
+              "id": "zWXiN",
+              "name": "Query component label",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "03 / Condition groups",
+              "lineHeight": 1.45,
+              "fontFamily": "$font",
+              "fontSize": 20,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "tLMNL",
+              "name": "Filter / Condition group",
+              "context": "Reusable query group. All means AND, Any means OR. Status, global scope and search stay outside editable groups. Children are typed conditions or nested groups. Removing a group removes its full subtree. Basic conversion is allowed only when every clause is losslessly representable.",
+              "reusable": true,
+              "width": "fill_container",
+              "fill": "$subtle",
+              "cornerRadius": 8,
+              "stroke": "$line-strong",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "children": [
+                {
+                  "id": "i9ZR6",
+                  "type": "ref",
+                  "ref": "TVlvu",
+                  "name": "Group combination",
+                  "width": "fill_container",
+                  "descendants": {
+                    "rN4VU": {
+                      "fill": "$filter-surface"
+                    },
+                    "EOXOT": {
+                      "fill": "$surface"
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "s91kg",
+                  "name": "Group conditions slot",
+                  "slot": [
+                    "yjppj"
+                  ],
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "id": "AHBEP",
+                      "type": "ref",
+                      "ref": "yjppj",
+                      "name": "Role group condition",
+                      "width": "fill_container",
+                      "descendants": {
+                        "Bm5lk": {
+                          "content": "Role"
+                        },
+                        "u3EMK": {
+                          "content": "is"
+                        },
+                        "K3Wa2C": {
+                          "content": "Supervisor"
+                        }
+                      }
+                    },
+                    {
+                      "id": "oMgm7",
+                      "type": "ref",
+                      "ref": "yjppj",
+                      "name": "Last active group condition",
+                      "width": "fill_container",
+                      "descendants": {
+                        "Bm5lk": {
+                          "content": "Last active"
+                        },
+                        "u3EMK": {
+                          "content": "before"
+                        },
+                        "K3Wa2C": {
+                          "content": "01 Oct 2026"
+                        },
+                        "d8Q2fB": {
+                          "icon": "calendar"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "heLiz",
+                  "type": "ref",
+                  "ref": "GRAQ2",
+                  "name": "Remove group",
+                  "height": 36,
+                  "descendants": {
+                    "McqpG": {
+                      "enabled": false
+                    },
+                    "JDWrR": {
+                      "content": "Remove group"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "IP4YG",
+              "name": "Filter / Applied group summary",
+              "context": "Atomic applied group. Edit reopens Advanced; remove removes whole group with Undo. This example counts two conditions, not one chip.",
+              "reusable": true,
+              "width": "fill_container",
+              "fill": "$filter-surface",
+              "cornerRadius": 8,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Dgyxc",
+                  "name": "Applied group heading",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "ANY OF · 2 conditions",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "vSThI",
+                  "name": "Applied group expression",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Role is Supervisor OR Last active before 01 Oct 2026",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "id": "A3T71",
+                  "type": "ref",
+                  "ref": "GRAQ2",
+                  "name": "Edit applied group",
+                  "height": 36,
+                  "descendants": {
+                    "McqpG": {
+                      "enabled": false
+                    },
+                    "JDWrR": {
+                      "content": "Edit group"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "O6kU5",
+              "name": "Neutral and scope semantics",
+              "fill": "$muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Scope + Status AND (conditions).\nMulti-value = 1 criterion; range = 1; unrestricted = 0.\nGroup count = its normalized conditions.\nReset changes the draft; Clear filters changes applied fields. Search and global scope stay.",
+              "lineHeight": 1.45,
+              "fontFamily": "$font",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "LG421",
+      "name": "Selection and recovery states",
+      "width": "fill_container",
+      "layout": "vertical",
+      "gap": 20,
+      "children": [
+        {
+          "type": "text",
+          "id": "Bw7Cn",
+          "name": "Field states heading",
+          "fill": "$ink",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "04 / Focus, availability and recovery",
+          "lineHeight": 1.45,
+          "fontFamily": "$font",
+          "fontSize": 20,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "VyTZy",
+          "name": "Lookup state variants",
+          "width": "fill_container",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "LvDj4",
+              "name": "Focused lookup variant",
+              "reusable": true,
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "F5Nmz",
+                  "name": "Focused state label",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Focused",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "id": "oTtHE",
+                  "type": "ref",
+                  "ref": "e5CQ17",
+                  "name": "Focused lookup",
+                  "width": "fill_container",
+                  "descendants": {
+                    "fQGkZ": {
+                      "stroke": "$focus",
+                      "strokeWidth": 2
+                    },
+                    "T6eQVt": {
+                      "content": "Mundra Port"
+                    },
+                    "enAg3": {
+                      "content": "Choose a site in Adani Ports.",
+                      "fill": "$muted"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "LI4Xr",
+              "name": "Loading lookup variant",
+              "reusable": true,
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "CO9qG",
+                  "name": "Loading state label",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Loading",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "id": "FmBSr",
+                  "type": "ref",
+                  "ref": "e5CQ17",
+                  "name": "Loading lookup",
+                  "width": "fill_container",
+                  "descendants": {
+                    "fQGkZ": {
+                      "stroke": "$line-strong",
+                      "strokeWidth": 1
+                    },
+                    "T6eQVt": {
+                      "content": "Mundra Port"
+                    },
+                    "enAg3": {
+                      "content": "Loading more sites… Selection retained.",
+                      "fill": "$muted"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "nzUyc",
+              "name": "No matching options lookup variant",
+              "reusable": true,
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "BhQEl",
+                  "name": "No matching options state label",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "No matching options",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "id": "nKu5a",
+                  "type": "ref",
+                  "ref": "e5CQ17",
+                  "name": "No matching options lookup",
+                  "width": "fill_container",
+                  "descendants": {
+                    "fQGkZ": {
+                      "stroke": "$line-strong",
+                      "strokeWidth": 1
+                    },
+                    "T6eQVt": {
+                      "content": "Mundra Port"
+                    },
+                    "enAg3": {
+                      "content": "No sites match “Kandlax”. Clear search.",
+                      "fill": "$muted"
+                    }
+                  }
+                },
+                {
+                  "id": "AgmHy",
+                  "type": "ref",
+                  "ref": "GRAQ2",
+                  "name": "Clear option search",
+                  "height": 36,
+                  "descendants": {
+                    "McqpG": {
+                      "enabled": false
+                    },
+                    "JDWrR": {
+                      "content": "Clear search"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "C8Gcv",
+              "name": "Unavailable selection lookup variant",
+              "reusable": true,
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "LE9zS",
+                  "name": "Unavailable selection state label",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Unavailable selection",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "id": "DFsWw",
+                  "type": "ref",
+                  "ref": "e5CQ17",
+                  "name": "Unavailable selection lookup",
+                  "width": "fill_container",
+                  "descendants": {
+                    "fQGkZ": {
+                      "stroke": "$danger",
+                      "strokeWidth": 1
+                    },
+                    "T6eQVt": {
+                      "content": "Kandla site"
+                    },
+                    "enAg3": {
+                      "content": "No longer available in this company. Choose another site.",
+                      "fill": "$danger"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "i9itmN",
+          "name": "Disabled error and long selection",
+          "width": "fill_container",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "c6gH6",
+              "name": "Disabled field specimen",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "rF4cP",
+                  "name": "Disabled label",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Disabled / dependency",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "id": "r6kx3U",
+                  "type": "ref",
+                  "ref": "e5CQ17",
+                  "name": "Dependent site disabled",
+                  "width": "fill_container",
+                  "descendants": {
+                    "fQGkZ": {
+                      "fill": "$subtle"
+                    },
+                    "T6eQVt": {
+                      "content": "Choose company first",
+                      "fill": "$muted"
+                    },
+                    "enAg3": {
+                      "content": "Select a company to load permitted sites."
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "zTDZG",
+              "name": "Lookup request error",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "TMQnO",
+                  "name": "Lookup error label",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Options unavailable",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "id": "mnidr",
+                  "type": "ref",
+                  "ref": "e5CQ17",
+                  "name": "Lookup with retained selection",
+                  "width": "fill_container",
+                  "descendants": {
+                    "enAg3": {
+                      "content": "Could not load sites. Your selection is unchanged.",
+                      "fill": "$danger"
+                    }
+                  }
+                },
+                {
+                  "id": "Zoii6",
+                  "type": "ref",
+                  "ref": "GRAQ2",
+                  "name": "Retry loading sites",
+                  "height": 36,
+                  "descendants": {
+                    "McqpG": {
+                      "enabled": false
+                    },
+                    "JDWrR": {
+                      "content": "Retry"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "u642UC",
+              "name": "Long selection overflow specimen",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "W7JfJ2",
+                  "name": "Many values label",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Many values / long labels",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "id": "r4KTN",
+                  "type": "ref",
+                  "ref": "woYVo",
+                  "name": "Selected sites overflow",
+                  "width": "fill_container",
+                  "descendants": {
+                    "cC66H": {
+                      "content": "Sites"
+                    },
+                    "YeFWe": {
+                      "content": "Mundra International Container Terminal"
+                    },
+                    "GgLki": {
+                      "enabled": false
+                    },
+                    "vWhdE": {
+                      "content": "+5 more",
+                      "enabled": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jJqAw",
+              "name": "Range error specimen",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Gxufz",
+                  "name": "Range error label",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Invalid range / retain both values",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "id": "Y3eZsk",
+                  "type": "ref",
+                  "ref": "c0MP0",
+                  "name": "Invalid area range",
+                  "width": "fill_container",
+                  "descendants": {
+                    "SMjrP": {
+                      "stroke": "$danger"
+                    },
+                    "SJ1ng": {
+                      "content": "100"
+                    },
+                    "w0dPcF": {
+                      "stroke": "$danger"
+                    },
+                    "lRqwt": {
+                      "content": "10"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "mFflP",
+                  "name": "Range correction",
+                  "fill": "$danger",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Minimum must be less than or equal to maximum.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "P7i2ks",
+      "name": "Open picker and compact summary specimens",
+      "width": "fill_container",
+      "gap": 32,
+      "children": [
+        {
+          "type": "frame",
+          "id": "gCSFs",
+          "name": "Open category picker specimen",
+          "width": 620,
+          "layout": "vertical",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "dESJX",
+              "name": "Picker specimen title",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "05 / Open multi-select",
+              "lineHeight": 1.45,
+              "fontFamily": "$font",
+              "fontSize": 20,
+              "fontWeight": "normal"
+            },
+            {
+              "id": "pZ2Dp",
+              "type": "ref",
+              "ref": "woYVo",
+              "name": "Category control opened",
+              "width": "fill_container",
+              "descendants": {
+                "cC66H": {
+                  "content": "Category"
+                },
+                "D9aVam": {
+                  "stroke": "$focus",
+                  "strokeWidth": 2
+                },
+                "YeFWe": {
+                  "content": "Port terminal"
+                },
+                "GgLki": {
+                  "enabled": false
+                }
+              }
+            },
+            {
+              "id": "ozkBy",
+              "type": "ref",
+              "ref": "d1jgS",
+              "name": "Category options open",
+              "width": "fill_container"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "HUtHZ",
+          "name": "Shared interaction contract",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "WS4Al",
+              "name": "Contract title",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Shared interaction contract",
+              "lineHeight": 1.45,
+              "fontFamily": "$font",
+              "fontSize": 20,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "t9IBNQ",
+              "name": "Keyboard contract",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Picker: label + current value + selection mode. Focus is distinct from selection. Arrow keys navigate; Space toggles multi-selection. Escape closes the picker first and returns focus to the field. The panel traps focus and restores it to the original trigger after closing. No second Apply inside a picker.",
+              "lineHeight": 1.45,
+              "fontFamily": "$font",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "kZn1k",
+              "name": "Data contract",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Relationship options are permission scoped. Parent changes preserve valid selections and identify unavailable ones. Requests are keyed to the current field/search; stale responses cannot replace newer options. A failed preview never appears as zero matches.",
+              "lineHeight": 1.45,
+              "fontFamily": "$font",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "YTxJL",
+              "name": "Responsive contract",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "At narrower widths, stack paired fields and condition rows. Keep the header and footer reachable. Chip summaries use a first value plus overflow count; full values remain available in the picker. Status becomes a select when its labels no longer fit.",
+              "lineHeight": 1.45,
+              "fontFamily": "$font",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "p7sA7z",
+      "name": "Grouped query and adaptive layout examples",
+      "width": "fill_container",
+      "gap": 23,
+      "children": [
+        {
+          "type": "frame",
+          "id": "elbz6",
+          "name": "Applied grouped query and Basic guard",
+          "width": "fill_container",
+          "fill": "$surface",
+          "stroke": "$line",
+          "strokeWidth": 1,
+          "layout": "vertical",
+          "gap": 20,
+          "padding": 24,
+          "children": [
+            {
+              "type": "text",
+              "id": "AH1c9",
+              "name": "Grouped query examples title",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "A grouped query stays intact",
+              "lineHeight": 1.45,
+              "fontFamily": "$font",
+              "fontSize": 20,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "YfXxb",
+              "name": "Applied scope",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "People · Status: Active · Site: Mundra Port",
+              "lineHeight": 1.45,
+              "fontFamily": "$font",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "id": "K3GWz",
+              "type": "ref",
+              "ref": "IP4YG",
+              "name": "Applied cross-field OR group",
+              "width": "fill_container"
+            },
+            {
+              "type": "text",
+              "id": "Q8dYKh",
+              "name": "Applied summary removal contract",
+              "fill": "$muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "The entire OR group is one summary item. Edit opens Advanced at this group. Remove removes the whole group and updates results; it never deletes just one side of OR.",
+              "lineHeight": 1.45,
+              "fontFamily": "$font",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "id": "aWIl3",
+              "type": "ref",
+              "ref": "xTtvq",
+              "name": "Basic conversion safeguard",
+              "width": "fill_container",
+              "descendants": {
+                "xpUcm": {
+                  "content": "Site = Mundra AND (Role = Supervisor OR Last active before 01 Oct 2026) cannot be represented in Basic. Keep editing in Advanced, or reset the draft filters. Applied results stay unchanged until Apply."
+                }
+              }
+            },
+            {
+              "type": "text",
+              "id": "MBmhu",
+              "name": "Basic reset scope",
+              "fill": "$muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Reset to Basic clears Status and condition groups in the pending draft only. It keeps global company/site scope and page search. Cancel restores the applied query.",
+              "lineHeight": 1.45,
+              "fontFamily": "$font",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "oCcdQ",
+          "name": "Text enlargement and stacked conditions",
+          "width": "fill_container",
+          "fill": "$surface",
+          "stroke": "$line",
+          "strokeWidth": 1,
+          "layout": "vertical",
+          "gap": 20,
+          "padding": 24,
+          "children": [
+            {
+              "type": "text",
+              "id": "TZgXW",
+              "name": "Text enlargement title",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "200% text / condition row reflow",
+              "lineHeight": 1.45,
+              "fontFamily": "$font",
+              "fontSize": 20,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "jYejt",
+              "name": "Text enlargement scope",
+              "fill": "$muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Design specimen: control text enlarged from 14 to 28 px. Field, operator and value stack; actions grow with labels. Runtime zoom and keyboard testing remain required.",
+              "lineHeight": 1.45,
+              "fontFamily": "$font",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "id": "y9djpK",
+              "type": "ref",
+              "ref": "yjppj",
+              "name": "Enlarged stacked condition",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "descendants": {
+                "l0m9oh": {
+                  "width": "fill_container",
+                  "padding": 16
+                },
+                "Bm5lk": {
+                  "content": "Operational responsibility department",
+                  "fontSize": 28
+                },
+                "WyeF8": {
+                  "width": "fill_container",
+                  "padding": 16
+                },
+                "u3EMK": {
+                  "content": "is any of",
+                  "fontSize": 28
+                },
+                "uVysc": {
+                  "width": "fill_container",
+                  "padding": 16
+                },
+                "K3Wa2C": {
+                  "content": "International terminal operations",
+                  "fontSize": 28
+                },
+                "DcwCX": {
+                  "width": 48,
+                  "height": 48
+                },
+                "GcciA": {
+                  "width": 28,
+                  "height": 28
+                }
+              }
+            },
+            {
+              "type": "text",
+              "id": "M4rFnO",
+              "name": "Adaptive row guidance",
+              "fill": "$muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Use the stacked variant when text or container width makes inline controls too narrow. Keep complete values available in the picker. At text zoom, scroll the panel body and keep Apply / Cancel reachable.",
+              "lineHeight": 1.45,
+              "fontFamily": "$font",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "iomPb",
+          "name": "Variable status and overflow examples",
+          "width": "fill_container",
+          "fill": "$surface",
+          "stroke": "$line",
+          "strokeWidth": 1,
+          "layout": "vertical",
+          "gap": 20,
+          "padding": 24,
+          "children": [
+            {
+              "type": "text",
+              "id": "oVlwU",
+              "name": "Status overflow title",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "When labels or options grow",
+              "lineHeight": 1.45,
+              "fontFamily": "$font",
+              "fontSize": 20,
+              "fontWeight": "normal"
+            },
+            {
+              "id": "JP1GG",
+              "type": "ref",
+              "ref": "l8h8Rg",
+              "name": "Status single select fallback",
+              "width": "fill_container",
+              "descendants": {
+                "Q5dpEW": {
+                  "content": "Status"
+                },
+                "StCYL": {
+                  "content": "Pending operational approval"
+                }
+              }
+            },
+            {
+              "type": "text",
+              "id": "yA9Xd",
+              "name": "Status fallback rule",
+              "fill": "$muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Use a single-select picker instead of the segmented row when there are more than four statuses or long labels. All remains the explicit unrestricted option; selected state never relies on color alone.",
+              "lineHeight": 1.45,
+              "fontFamily": "$font",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "W4GX9",
+              "name": "Applied summary overflow demonstration",
+              "width": "fill_container",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "RIR3b",
+                  "type": "ref",
+                  "ref": "G8wC2c",
+                  "name": "Visible status criterion",
+                  "descendants": {
+                    "pmesg": {
+                      "content": "Status"
+                    },
+                    "PVQeL": {
+                      "content": "Active"
+                    }
+                  }
+                },
+                {
+                  "id": "VMp5l",
+                  "type": "ref",
+                  "ref": "nTRX7",
+                  "name": "More applied criteria",
+                  "context": "Opens the applied criteria list with full labels and individual remove actions. OR groups remain atomic."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "Ij39t",
+              "name": "Count and time semantics",
+              "fill": "$muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Badge count = normalized active criteria, including restricted Status once. One multi-value field = 1; one range = 1. Groups disclose their internal condition count. Search and global scope are excluded.",
+              "lineHeight": 1.45,
+              "fontFamily": "$font",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "K1HPKj",
+              "name": "Date and quantity semantics",
+              "fill": "$muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Dates use the workspace timezone, inclusive day endpoints and rolling relative presets. Open numeric bounds are unrestricted; 0 is valid. Area uses ha, normalized to m². Any / blank adds no restriction; Is empty / Is not empty explicitly targets missing values.",
+              "lineHeight": 1.45,
+              "fontFamily": "$font",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
